@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .main-cards{
+        @apply   rounded-lg bg-opacity-50 dark:bg-opacity-50 bg-white text-black dark:bg-black dark:text-white;
+    }
+    .skills-list ul{
+        @apply flex flex-wrap  grid-flow-col w-full whitespace-nowrap
+    }
+    .skills-list ul li{
+        @apply px-2 ml-1 my-1 py-1 border border-purple-200  w-fit rounded-md bg-purple-100 text-sm font-medium text-purple-600 dark:border-cyan-200 dark:bg-purple-100 dark:text-purple-800
+    }
+    .project-info { 
+        @apply flex space-y-2 space-x-4  py-7;
+    }
+    .project-info img{ 
+        @apply w-12 mt-3 h-11 ;
+    }
+    .project-info-points { 
+        @apply w-full text-gray-600 dark:text-gray-200 pt-2;
+        font-weight: 420;
+    }
+    .bullet-point{
+        @apply flex  m-1.5 mt-2 w-2 h-2 bg-gray-700 dark:bg-purple-400 rounded-full  flex-shrink-0;
+    }
+
+    .dark .text-01{
+        @apply text-blue-400
+    }
+    .dark .text-02{
+        @apply text-blue-700
+    }
+    
+}
+.star {
+    background-color: rgb(181, 43, 43);
+    height: 20px;
+    width: 20px;
+
+    /* top: 10px;
+    left: 10px;
+    position: absolute; */
+    transition: transform 2s linear 3s;
+    z-index: 30;
+}
+.star:hover .star{
+    transform: translateX(50%, 50%);
+}
