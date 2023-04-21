@@ -13,7 +13,7 @@
 <body class="">
   <!-- ---------------------------  -->
 
-  <div id="root " >
+  <div id="root ">
     <div class="dark ">
       <div class="stars fixed top-0 left-0 w-screen h-screen z-10 bg-gradient-to-tr from-[#252449] to-[#373567]">
         <!-- <div class="w-10 h-10 bg-white"></div>
@@ -30,8 +30,7 @@
 
           <!-- Profile Card -->
           <div class="main-cards w-full relative   pb-5  flex flex-col space-y-2  p-4  sm:p-8">
-            <div class="flex w-full  space-x-5"><img class=" w-24 h-24  rounded-full"
-                src="assets/avatar.jpeg">
+            <div class="flex w-full  space-x-5"><img class=" w-24 h-24  rounded-full" src="assets/avatar.jpeg">
               <div class="flex flex-col space-y-1 w-auto items-center ">
                 <h1 class="font-extrabold text-xl  ">Siddhant Deshmukh</h1>
                 <h4 class="font-medium  text-01 ">Software Engineer / <br> Full Stack web
@@ -102,7 +101,7 @@
             </div>
             <div class=" text-violet-600 text-01 font-medium flex flex-col space-y-1 py-2">
               <a href="mailto:siddhant.deshmukh@outlook.com">@ siddhant.deshmukh@outlook.com </a>
-              <a href="mailto:learner.siddhant.deshmukh@gmail.com">@ learner.siddhant.deshmukh@gmail.com</a>
+              <a href="mailto:learner.siddhant.deshmukh@gmail.com" class="truncate">@ learner.siddhant.deshmukh@gmail.com</a>
             </div>
             <div class="flex justify-between">
               <div class="flex space-x-4">
@@ -127,68 +126,75 @@
 
           <!-- Personal Projects -->
 
-          <div class="main-cards  flex flex-col  w-full rounded-md p-4  sm:p-8">
+          <div class="main-cards  flex flex-col  w-full rounded-md p-4  sm:p-8 overflow-hidden">
             <h1 class="font-extrabold text-xl p-2 dark:text-white">Personal Projects</h1>
 
             <!-- Twitter Clone  -->
-            <div class="project-info">
-              <img src="assets/twiiter.svg" class="">
-              <div class="w-full">
-                <header class="flex justify-between w-full">
+            <div class="flex flex-col py-2">
+              <header class="flex justify-between w-full space-x-7">
+                <div class="flex items-center min-w-fit space-x-2">
+                  <img src="assets/twiiter.svg" class="">
                   <div class="w-fit">
                     <div class="font-medium text-lg">Twitter Clone</div>
                     <div class="text-sm flex space-x-2 text-01">
                       <a href="https://twitter-clone-flame-kappa.vercel.app/home" class="underline">Go to Website</a>
-                      <a href="https://github.com/siddhant-deshmukh/twitter-clone-using-nextjs" class="underline">Code</a>
+                      <a href="https://github.com/siddhant-deshmukh/twitter-clone-using-nextjs"
+                        class="underline">Code</a>
                     </div>
                   </div>
-                  <div class="w-fit ">
-                    <span 
-                    class="bg-blue-600 text-white dark:text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-600">
-                      Azure
-                    </span>
-                    <span
-                      class="bg-blue-900 text-white dark:text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900">
-                      Next
-                    </span>
-                    <span
-                      class="bg-green-600 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-600 dark:text-white">
-                      MongoDB
-                    </span>
-                  </div>
-                </header>
-                <div class="project-info-points">
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Implemented key features including tweeting with text and media, liking ,retweeting, commenting, tweet feeds, etc.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Ensured the application is <b>responsive</b> and user-friendly, incorporating a <b>dark mode</b> for a better user experience.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      On Frontend uses NextJS, <b>tailwindcss</b> for styling, and SWR for <b>frontend Caching</b> and state management
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Integrated <i>Azure <b>Cosmos DB</b> for MongoDB</i> as the primary database, and <b>Azure Blob storage</b> to store user avatars and tweet media files.
-Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP endpoints to upload images and <b>Azure AD</b> for authentication.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Demonstrated knowledge of key web development concepts, including database optimization, security, and cloud computing.
-                    </span>
-                  </div>
+                </div>
+                <div class="w-fit max-w-[90px] inline-block h-full xsm:max-w-full xsm:block">
+                  <span
+                    class="bg-blue-600 text-white dark:text-white text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5 h-fit rounded dark:bg-blue-600">
+                    Azure
+                  </span>
+                  <span
+                    class="bg-blue-900 text-white dark:text-white text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5 h-fit rounded dark:bg-blue-900">
+                    Next
+                  </span>
+                  <span
+                    class="bg-green-600 text-white text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5 rounded h-fit dark:bg-green-600 dark:text-white">
+                    MongoDB
+                  </span>
+                </div>
+              </header>
+              <div class="project-info-points pl-5 xsm:pl-14">
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Implemented key features including tweeting with text and media, liking ,retweeting, commenting,
+                    tweet feeds, etc.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Ensured the application is <b>responsive</b> and user-friendly, incorporating a <b>dark mode</b>
+                    for a better user experience.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    On Frontend uses NextJS, <b>tailwindcss</b> for styling, and SWR for <b>frontend Caching</b> and
+                    state management
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Integrated <i>Azure <b>Cosmos DB</b> for MongoDB</i> as the primary database, and <b>Azure Blob
+                      storage</b> to store user avatars and tweet media files.
+                    Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP endpoints to
+                    upload images and <b>Azure AD</b> for authentication.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Demonstrated knowledge of key web development concepts, including database optimization, security,
+                    and cloud computing.
+                  </span>
                 </div>
               </div>
             </div>
@@ -215,12 +221,14 @@ Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP 
                     <span>Developed a full-stack Google Form clone using the MERN stack</span>
                   </div>
                   <div class="flex"><span class="bullet-point"></span><span>
-                    Implemented key features, including creating forms with different question types (short answer, multiple-choice, etc.), response summery, csv responses.
+                      Implemented key features, including creating forms with different question types (short answer,
+                      multiple-choice, etc.), response summery, csv responses.
                   </div>
                   <div class="flex">
                     <span class="bullet-point"></span>
                     <span>
-                      Also Incorporated Sortable js for <b>drag-and-drop functionality</b> to sort questions and options.
+                      Also Incorporated Sortable js for <b>drag-and-drop functionality</b> to sort questions and
+                      options.
                     </span>
                   </div>
                   <div class="flex">
@@ -232,16 +240,18 @@ Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP 
                   <div class="flex">
                     <span class="bullet-point"></span>
                     <span>
-                    Implemented secure user authentication with <b>JSONWebToken</b> and <b>Bcryptjs</b> for encrypting passwords, and provided additional authentication options with <b>OAuth</b> of Google and Github.
+                      Implemented secure user authentication with <b>JSONWebToken</b> and <b>Bcryptjs</b> for encrypting
+                      passwords, and provided additional authentication options with <b>OAuth</b> of Google and Github.
                     </span>
                   </div>
                   <div class="flex">
                     <span class="bullet-point"></span>
                     <span>
-                      Demonstrated expertise in web application development, utilizing a variety of technologies and adhering to industry standards and best practices.
+                      Demonstrated expertise in web application development, utilizing a variety of technologies and
+                      adhering to industry standards and best practices.
                     </span>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
@@ -278,7 +288,8 @@ Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP 
                   <div class="flex">
                     <span class="bullet-point"></span>
                     <span>
-                      On Backend Firebase services are being used such as <b>Google Cloud Functions</b>, Firestore, Firebase
+                      On Backend Firebase services are being used such as <b>Google Cloud Functions</b>, Firestore,
+                      Firebase
                       Storage and Google Identity Platform.
                     </span>
                   </div>
@@ -292,7 +303,8 @@ Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP 
                   <div class="flex">
                     <span class="bullet-point"></span>
                     <span>
-                      Implemented optimized and secure database queries and leveraged other firebase features for database management, authentication, and hosting to create a scalable, efficient application.
+                      Implemented optimized and secure database queries and leveraged other firebase features for
+                      database management, authentication, and hosting to create a scalable, efficient application.
                     </span>
                   </div>
                 </div>
