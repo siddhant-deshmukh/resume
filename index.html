@@ -101,7 +101,8 @@
             </div>
             <div class=" text-violet-600 text-01 font-medium flex flex-col space-y-1 py-2">
               <a href="mailto:siddhant.deshmukh@outlook.com">@ siddhant.deshmukh@outlook.com </a>
-              <a href="mailto:learner.siddhant.deshmukh@gmail.com" class="truncate">@ learner.siddhant.deshmukh@gmail.com</a>
+              <a href="mailto:learner.siddhant.deshmukh@gmail.com" class="truncate">@
+                learner.siddhant.deshmukh@gmail.com</a>
             </div>
             <div class="flex justify-between">
               <div class="flex space-x-4">
@@ -130,9 +131,9 @@
             <h1 class="font-extrabold text-xl p-2 dark:text-white">Personal Projects</h1>
 
             <!-- Twitter Clone  -->
-            <div class="flex flex-col py-2">
-              <header class="flex justify-between w-full space-x-7">
-                <div class="flex items-center min-w-fit space-x-2">
+            <div class="project-info">
+              <header class="">
+                <div class="project-info-title-header">
                   <img src="assets/twiiter.svg" class="">
                   <div class="w-fit">
                     <div class="font-medium text-lg">Twitter Clone</div>
@@ -145,20 +146,21 @@
                 </div>
                 <div class="w-fit max-w-[90px] inline-block h-full xsm:max-w-full xsm:block">
                   <span
-                    class="bg-blue-600 text-white dark:text-white text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5 h-fit rounded dark:bg-blue-600">
+                    class="bg-blue-600 text-white dark:text-white project-info-keyword h-fit rounded dark:bg-blue-600">
                     Azure
                   </span>
                   <span
-                    class="bg-blue-900 text-white dark:text-white text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5 h-fit rounded dark:bg-blue-900">
+                    class="bg-blue-900 text-white dark:text-white project-info-keyword h-fit rounded dark:bg-blue-900">
                     Next
                   </span>
                   <span
-                    class="bg-green-600 text-white text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5 rounded h-fit dark:bg-green-600 dark:text-white">
+                    class="bg-green-600 text-white project-info-keyword rounded h-fit dark:bg-green-600 dark:text-white">
                     MongoDB
                   </span>
                 </div>
               </header>
-              <div class="project-info-points pl-5 xsm:pl-14">
+
+              <div class="project-info-points">
                 <div class="flex">
                   <span class="bullet-point"></span>
                   <span>
@@ -201,9 +203,10 @@
 
             <!-- GoogleFormClone -->
             <div class="project-info border-y">
-              <img src="assets/google-form.svg">
-              <div class=" w-full">
-                <header class="flex justify-between w-full">
+
+              <header class="">
+                <div class="project-info-title-header">
+                  <img src="assets/google-form.svg">
                   <div class="w-fit">
                     <div class="font-medium text-lg">Goolge Form Clone</div>
                     <div class="text-sm flex space-x-2 text-01"><a href="https://google-form-clone-sd.netlify.app/demo"
@@ -211,56 +214,60 @@
                         href="https://github.com/siddhant-deshmukh/GoogleFormClone-frontend" class="underline">Code</a>
                     </div>
                   </div>
-                  <div class="w-fit "><span
-                      class="bg-green-600 text-white dark:bg-green-600 dark:text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">MERN</span>
-                  </div>
-                </header>
-                <div class=" project-info-points" style="font-weight: 420;">
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>Developed a full-stack Google Form clone using the MERN stack</span>
-                  </div>
-                  <div class="flex"><span class="bullet-point"></span><span>
-                      Implemented key features, including creating forms with different question types (short answer,
-                      multiple-choice, etc.), response summery, csv responses.
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Also Incorporated Sortable js for <b>drag-and-drop functionality</b> to sort questions and
-                      options.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Utilized Express and MongoDB on the backend for efficient data management and storage.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Implemented secure user authentication with <b>JSONWebToken</b> and <b>Bcryptjs</b> for encrypting
-                      passwords, and provided additional authentication options with <b>OAuth</b> of Google and Github.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Demonstrated expertise in web application development, utilizing a variety of technologies and
-                      adhering to industry standards and best practices.
-                    </span>
-                  </div>
-
                 </div>
+                <div class="w-fit max-w-[90px] inline-block h-full xsm:max-w-full xsm:block">
+                  <span
+                    class="bg-green-600 text-white dark:bg-green-600 dark:text-white project-info-keyword rounded">
+                    MERN
+                  </span>
+                </div>
+              </header>
+              <div class=" project-info-points" style="font-weight: 420;">
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>Developed a full-stack Google Form clone using the MERN stack</span>
+                </div>
+                <div class="flex"><span class="bullet-point"></span><span>
+                    Implemented key features, including creating forms with different question types (short answer,
+                    multiple-choice, etc.), response summery, csv responses.
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Also Incorporated Sortable js for <b>drag-and-drop functionality</b> to sort questions and
+                    options.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Utilized Express and MongoDB on the backend for efficient data management and storage.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Implemented secure user authentication with <b>JSONWebToken</b> and <b>Bcryptjs</b> for encrypting
+                    passwords, and provided additional authentication options with <b>OAuth</b> of Google and Github.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Demonstrated expertise in web application development, utilizing a variety of technologies and
+                    adhering to industry standards and best practices.
+                  </span>
+                </div>
+
               </div>
+
             </div>
 
             <!-- Instagram -->
             <div class="project-info">
-              <img src="assets/instagram.svg" />
-              <div class="w-full">
-                <header class="flex justify-between w-full">
+              <header class="">
+                <div class="project-info-title-header">
+                  <img src="assets/instagram.svg" />
                   <div class="w-fit">
                     <div class="font-medium text-lg">Instagram Clone</div>
                     <div class="text-sm flex space-x-2 text-01">
@@ -268,45 +275,46 @@
                       <a href="https://github.com/siddhant-deshmukh/firebase-insta" class="underline">Code</a>
                     </div>
                   </div>
-                  <div class="w-fit ">
-                    <span
-                      class=" text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-700 dark:bg-blue-700 dark:text-white">React</span>
-                    <span
-                      class="bg-yellow-600 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-600 dark:text-white">Firebase</span>
-                  </div>
-                </header>
-                <div class="project-info-points">
-                  Built a responsive
-                  Instagram clone website using React and Firebase.
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      On frontend React is used with <b>Tailwind CSS</b> for styling and <b>React Query</b> for
-                      Frontend Caching and state management.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      On Backend Firebase services are being used such as <b>Google Cloud Functions</b>, Firestore,
-                      Firebase
-                      Storage and Google Identity Platform.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Authentication
-                      methods include email-password with <b>Email Verification</b> and Google and GitHub OAuth.
-                    </span>
-                  </div>
-                  <div class="flex">
-                    <span class="bullet-point"></span>
-                    <span>
-                      Implemented optimized and secure database queries and leveraged other firebase features for
-                      database management, authentication, and hosting to create a scalable, efficient application.
-                    </span>
-                  </div>
+                </div>
+
+                <div class="w-fit max-w-[50px] inline-block h-full xsm:max-w-full xsm:block">
+                  <span
+                    class=" text-white project-info-keyword rounded bg-blue-700 dark:bg-blue-700 dark:text-white">React</span>
+                  <span
+                    class="bg-yellow-600 text-white project-info-keyword rounded dark:bg-yellow-600 dark:text-white">Firebase</span>
+                </div>
+              </header>
+              <div class="project-info-points">
+                Built a responsive
+                Instagram clone website using React and Firebase.
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    On frontend React is used with <b>Tailwind CSS</b> for styling and <b>React Query</b> for
+                    Frontend Caching and state management.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    On Backend Firebase services are being used such as <b>Google Cloud Functions</b>, Firestore,
+                    Firebase
+                    Storage and Google Identity Platform.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Authentication
+                    methods include email-password with <b>Email Verification</b> and Google and GitHub OAuth.
+                  </span>
+                </div>
+                <div class="flex">
+                  <span class="bullet-point"></span>
+                  <span>
+                    Implemented optimized and secure database queries and leveraged other firebase features for
+                    database management, authentication, and hosting to create a scalable, efficient application.
+                  </span>
                 </div>
               </div>
             </div>

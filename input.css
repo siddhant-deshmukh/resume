@@ -15,13 +15,22 @@
         @apply px-2 ml-1 my-1 py-1 border border-purple-200  w-fit rounded-md bg-purple-100 text-sm font-medium text-purple-600 dark:border-cyan-200 dark:bg-purple-100 dark:text-purple-800
     }
     .project-info { 
-        @apply flex space-y-2 space-x-4  py-7;
+        @apply py-7;
     }
-    .project-info img{ 
-        @apply w-12 mt-3 h-11 ;
+    .project-info header{ 
+        @apply flex justify-between w-full space-x-7;
+    }
+    .project-info-title-header{
+        @apply flex items-center min-w-fit space-x-2
+    }
+    .project-info-title-header img{ 
+        @apply w-12  h-11 ;
+    }
+    .project-info-keyword {
+        @apply text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5;
     }
     .project-info-points { 
-        @apply w-full text-gray-600 dark:text-gray-200 pt-2;
+        @apply w-full text-gray-600 dark:text-gray-200 pt-2 pl-5 xsm:pl-14;
         font-weight: 420;
     }
     .bullet-point{
