@@ -540,6 +540,10 @@ video {
   top: 0px;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -560,10 +564,6 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .mr-2 {
@@ -598,8 +598,8 @@ video {
   height: 6rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-28 {
+  height: 7rem;
 }
 
 .h-7 {
@@ -627,8 +627,8 @@ video {
   width: 6rem;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-28 {
+  width: 7rem;
 }
 
 .w-7 {
@@ -682,12 +682,6 @@ video {
 
 .gap-y-2 {
   row-gap: 0.5rem;
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -785,6 +779,11 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
+.bg-purple-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -793,6 +792,10 @@ video {
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
 }
 
 .bg-gradient-to-tr {
@@ -823,11 +826,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -871,10 +869,6 @@ video {
   text-align: left;
 }
 
-.text-\[10px\] {
-  font-size: 10px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -893,11 +887,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-extrabold {
@@ -1101,6 +1090,10 @@ video {
   transform: translateX(50%, 50%);
 }
 
+.group:hover .group-hover\:block {
+  display: block;
+}
+
 :is(.dark .dark\:block) {
   display: block;
 }
@@ -1147,21 +1140,6 @@ video {
 
   .xsm\:max-w-full {
     max-width: 100%;
-  }
-
-  .xsm\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .xsm\:px-2\.5 {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-  }
-
-  .xsm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
 
