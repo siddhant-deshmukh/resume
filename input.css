@@ -2,39 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: linear-gradient(30deg, #171c28 70%,  #0a4554 99%);
+}
+#skill-list > span {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-width: 1px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+#social-links > a {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+}
 
+.temp-hide {
+    display: none;
+    opacity: 0;
+    margin-top: 0;
+    transition: opacity 1000ms;
+    /* transition-property: opacity;
+    transition-duration: 1000ms; */
+}
+.temp-visible {
+    display: flex;
+    opacity: 1;
+    margin-top: 40px;
+    /* transition-property: opacity;
+    transition-duration: 1000ms; */
+    transition: opacity 1000ms;
+}
 
 @layer utilities {
-    .main-cards{
-        @apply   rounded-lg bg-opacity-50 dark:bg-opacity-50 bg-white text-black dark:bg-black dark:text-white;
+
+    nav button.choosen {
+        @apply  bg-secondary-2 bg-opacity-[0.6] border-secondary-2  
     }
-    .skills-list ul{
+    nav button.not-choosen {
+        @apply  bg-main border-primary 
+    }
+    nav button {
+        @apply px-4  py-2 rounded-full border  mr-3 mt-2 hover:bg-secondary-2 hover:bg-opacity-60 hover:cursor-pointer
+    }
+
+    .main-cards{
+        @apply   rounded-lg bg-opacity-50 dark:bg-opacity-50 bg-white text-black dark:bg-black dark:text-white text-xl;
+    }
+    /* .skills-list ul{
         @apply flex flex-wrap  grid-flow-col w-full whitespace-nowrap
     }
     .skills-list ul li{
         @apply px-2 ml-1 my-1 py-1 border border-purple-200  w-fit rounded-md bg-purple-100 text-sm font-medium text-purple-600 dark:border-cyan-200 dark:bg-purple-100 dark:text-purple-800
+    } */
+
+    #exp-list h4 {
+        @apply text-lg font-medium text-primary-light-2 
     }
-    .project-info { 
-        @apply py-7;
+    #exp-list li {
+    @apply text-base text-primary-light-2 mb-1
     }
-    .project-info header{ 
-        @apply flex justify-between w-full space-x-7;
+    #exp-list time {
+        @apply text-sm
     }
-    .project-info-title-header{
-        @apply flex items-center min-w-fit space-x-2
+    /* #exp-list li::before {
+        content: "\2022" ;
+        @apply px-1
+    } */
+    #exp-list span {
+        @apply px-3 py-1.5 text-sm border rounded-full mr-3 mt-2 border-secondary-2  text-secondary
     }
-    .project-info-title-header img{ 
-        @apply w-12  h-11 ;
+    #project-types-list button{
+        @apply px-4 py-[1px] text-[14px] rounded-full border-t shadow-sm shadow-secondary-2 border-secondary-2 hover:bg-secondary hover:bg-opacity-[0.15]   text-primary
     }
-    .project-info-keyword {
-        @apply text-[10px] xsm:text-xs font-medium ml-2 px-1 xsm:px-2.5 py-0.5;
-    }
-    .project-info-points { 
-        @apply w-full text-gray-600 dark:text-gray-200 pt-2 pl-5 xsm:pl-14;
-        font-weight: 420;
-    }
-    .bullet-point{
-        @apply flex  m-1.5 mt-2 w-2 h-2 bg-gray-700 dark:bg-purple-400 rounded-full  flex-shrink-0;
+
+    mark{
+        @apply flex  mr-1.5 mt-2 w-2 h-2 bg-secondary-2 rounded-full  flex-shrink-0;
     }
 
     .dark .text-01{
@@ -44,7 +92,50 @@
         @apply text-blue-700
     }
     
+
+    #projects-list span {
+        /* @apply text-sm px-3 py-1 rounded-md  mr-3 border-secondary-2 bg-secondary bg-opacity-10 text-secondary */
+        @apply px-3 py-1.5 text-sm border rounded-full mr-3 mt-2 border-secondary-2  text-secondary
+    }
+    /* #projects-list div {
+
+    } */
+    #projects-list li {
+        @apply pt-2 text-primary-light-3
+    }
+    #projects-list > div {
+        @apply flex-col
+    }
+    #projects-list > div div {
+        @apply mt-3 ml-3
+    }
+    #projects-list h4 {
+        @apply text-xl font-medium text-primary-light-2 flex justify-between items-center
+    }
+    #projects-list h4 img{
+        @apply h-7 aspect-square
+    }
+    .points li {
+        @apply flex
+    }
+    
+    #work-part > section {
+        @apply pb-7 border-b border-b-secondary-2
+    }
+    #work-part > h3 {
+        @apply mt-5 text-[22px]  pb-2 font-semibold pt-5 text-primary
+        /* sticky top-[92px] */
+    }
+
+    .selected-project-type {
+        @apply bg-secondary bg-opacity-30 transition-colors duration-500
+    }
+    .non-selected-project-type {
+        @apply bg-transparent transition-colors duration-500
+    }
 }
+
+
 .star {
     background-color: rgb(181, 43, 43);
     height: 20px;

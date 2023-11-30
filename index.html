@@ -8,349 +8,318 @@
   <link rel="shortcut icon" href="assets/avatar.jpeg" style="border-radius: 9999px">
   <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
   <title>Siddhant Deshmukh</title>
+  <script defer src="./projects.js"></script>
 </head>
 
-<body class="">
-  <!-- ---------------------------  -->
-
-  <div id="root ">
-    <div class="dark ">
-      <div class="stars fixed top-0 left-0 w-screen h-screen z-10 bg-gradient-to-tr from-[#252449] to-[#373567]">
-        <!-- <div class="w-10 h-10 bg-white"></div>
-        <div class="star"></div> -->
+<body class=" text-primary">
+  <div class="flex h-screen mx-auto place-content-center overflow-x-hidden overflow-y-auto space-x-16">
+    <aside id="intro-nav-part" class="sticky top-0 w-[400px] p-5 pt-10 rounded-md flex flex-col h-[100vh]">
+      <div class="">
+        <h1 class="text-4xl text-primary-light-1 font-[600]">Siddhant Deshmukh</h1>
+        <h2 class="text-xl text-secondary mt-7 font-medium">Full stack developer</h2>
+        <p class="text-lg text-primary-light-2 mt-7">
+          Thrive in dynamic environments and relish challenges that push my boundaries.
+        </p>
       </div>
 
-      <image class="hidden dark:block fixed top-0 left-0 w-full h-full object-cover z-10"
-        src="assets/layered-peaks-dark.svg">
-      </image>
+      <!-- <nav id="left-nav" class="flex text-xl flex-col space-y-2">
+        <a>About</a>
+        <a>Experience</a>
+        <a>Projects</a>
+      </nav> -->
 
-      <main
-        class=" mx-auto relative z-20  p-2 my-3 w-fit grid grid-cols-1 lg:grid-cols-3  lg:gap-x-5 gap-y-2 lg:gap-y-5 max-w-5xl">
-        <aside class="w-full md:sticky flex flex-col space-y-2 lg:space-y-10 lg:top-5 h-fit  col-span-1">
+      <div class="mt-16">
+        <!-- <h3 class="text-2xl my-5 font-semibold">Skills</h3> -->
+        <ul id="skill-list" class="flex flex-wrap space text-primary-light-1">
+          <span>React</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>Node.js</span>
+          <span>Golang</span>
+          <span>Python</span>
+          <span>C++</span>
+          <span>Next.js</span>
+          <span>Firebase</span>
+          <span>AWS</span>
+          <span>Google Cloud</span>
+        </ul>
+      </div>
+      <div class="mt-auto">
+        <ul id="social-links" class="flex flex-wrap items-center">
+          <a target="_blank" href="mailto:learner.siddhant.deshmukh@gmail.com"><img src="./assets/mail.svg" /></a>
+          <a target="_blank" href="https://github.com/siddhant-deshmukh"><img src="./assets/github.svg" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/siddhant-sd/"><img src="./assets/linkedin.svg" /></a>
+          <a target="_blank" href="mailto:siddhant.deshmukh@outlook.com"><img src="./assets/mail.svg" /></a>
+        </ul>
+      </div>
+    </aside>
 
-          <!-- Profile Card -->
-          <div class="main-cards w-full relative   pb-5  flex flex-col space-y-2  p-4  sm:p-8">
-            <div class="flex w-full  space-x-5"><img class=" w-24 h-24  rounded-full" src="assets/avatar.jpeg">
-              <div class="flex flex-col space-y-1 w-auto items-center ">
-                <h1 class="font-extrabold text-xl  ">Siddhant Deshmukh</h1>
-                <h4 class="font-medium  text-01 ">Software Engineer / <br> Full Stack web
-                  developer</h4>
-              </div>
+    <main id="work-part" class="max-w-4xl relative">
+      <!-- <nav
+        class="flex sticky top-0 text-primary  justify-end space-x-2 p-2 pt-10 bg-main rounded-md text-lg font-medium">
+        <button class="nav-buttons" name="about">About</button>
+        <button class="nav-buttons" name="experience">Experience</button>
+        <button class="nav-buttons" name="projects">Projects</button>
+      </nav> -->
+      
+      <h3 class="">About</h3>
+      <section id="about" class="">
+        <p class="text-primary-light-1">
+          Hello, I'm Siddhant Deshmukh, a recent graduate from 2023. I started software developemnt in my second year of
+          college, where I tried many different things. Over the years, I have honed my skills in a variety of
+          technologies, excelling particularly in the MERN stack, SQL, Tailwind CSS, Python, and TypeScript.
+          <br />
+          <br />
+          I also have introducotry knowledge of Kubernetes, GraphQL, and DevOps,.
+        </p>
+      </section>
+
+      <h3 class="">Experience</h3>
+      <section id="experience" class="">
+        <div id="exp-list">
+          <div class="exp flex flex-col">
+            <h4>Full Stack Intern at GoClock Technologies Pvt Ltd</h4>
+            <div class="ml-auto"><time>June 2023 - Augest 2023</time></div>
+            <ul class="points text-primary-light-2">
+              <li>
+                <mark></mark>Developed a MERN stack app with logging using Winston and authentication
+                authorization with auth0.
+              </li>
+              <li>
+                <mark></mark>Transformed the app into microservices and deployed it on GKE and
+                Minikube
+              </li>
+              <li>
+                <mark></mark>Used RabbitMQ and Fluentd for inter-service communication and
+                centralized logging.
+              </li>
+              <li>
+                <mark></mark>Improve the scalability and resilience by adopting microservice
+                architecture and DevOps techniques.
+              </li>
+            </ul>
+            <div>
+              <span>MERN</span>
+              <span>RabbitMQ</span>
+              <span>Kubernetes</span>
+              <span>auth0</span>
+              <span>Cloud Computing</span>
+              <span>microservices</span>
             </div>
           </div>
-
-          <!-- Skills!!! -->
-          <div class="main-cards w-full p-4 flex flex-col space-y-3 sm:p-5">
-            <h1 class="w-full text-left  text-xl  py-2 pl-2  font-extrabold">SKILLS</h1>
-            <div class="skills-list w-full flex flex-col space-y-1">
-              <ul class="">
-                <li class="relative group">
-                  HTML/CSS
-                  <div class="absolute bg-opacity-75 bg-purple-400 w-28 h-28 hidden group-hover:block top-8 left-0">
-
-                  </div>
-                </li>
-                <li class="">JavaScript</li>
-                <li class="">TypeScript</li>
-                <li class="">React</li>
-                <li class="">Tailwindcss</li>
-              </ul>
-              <ul class="">
-                <li class="">Next</li>
-                <li class="">Express</li>
-                <li class="">Firebase</li>
-              </ul>
-              <ul class="">
-                <li class="">MongoDB</li>
-                <li class="">MySQL</li>
-                <li class="">Postgres</li>
-                <li class="">FireStore</li>
-              </ul>
-              <ul class="">
-                <li class="">Data Visualization</li>
-                <li class="">Machine Learning</li>
-                <li class="">Game Development</li>
-                <li class="">Ubuntu</li>
-                <li class="">Docker</li>
-                <li class="">Python</li>
-                <li class="">C++</li>
-                <li class="">Azure</li>
-                <li class="">Google Cloud</li>
-              </ul>
-            </div>
-          </div>
-        </aside>
-
-        <div class=" flex flex-col space-y-2 lg:space-y-7 col-span-1 lg:col-span-2">
-
-          <!-- About Me -->
-          <div class="main-cards  w-full relative flex flex-col space-y-5  p-4  sm:p-8">
-            <span
-              class="absolute right-0 top-0  w-fit text-sm font-medium mr-2 px-2.5 py-0.5 rounded bg-green-600 text-white dark:bg-green-600 dark:text-white">
-              Open For Work
-            </span>
-            <h1 class="font-extrabold text-lg dark:text-white">
-              About Me
-            </h1>
-            <div class="text-left  mt-3 font-medium text-base text-gray-600 dark:text-gray-200">
-              <div>
-                As a software developer, I have experience in developing secure and scalable
-                applications using Node.js, frameworks like Express, SQL and NoSQL databases
-                as well as building rich UI components with React.js
-                
-                
-              </div>
-              <div class="pt-2">
-                I write clean, efficient, and well-documented code that follows the latest
-                programming trends, best practices, and have strong debugging and
-                troubleshooting skills to ensure the quality and performance of the software I
-                develop.
-                <br/>
-                I am passionate about leveraging my knowledge and expertise to help achieve
-                either organizational goals or solving complex problem.
-              </div>
-            </div>
-            <div class=" text-violet-600 text-01 font-medium flex flex-col space-y-1 py-2">
-              <a href="mailto:siddhant.deshmukh@outlook.com">@ siddhant.deshmukh@outlook.com </a>
-              <a href="mailto:learner.siddhant.deshmukh@gmail.com" class="truncate">@
-                learner.siddhant.deshmukh@gmail.com</a>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex space-x-4">
-                <a href="https://github.com/siddhant-deshmukh" class="">
-                  <img class="w-7 h-7" src="assets/github.svg">
-                </a>
-                <a href="https://linkedin.com/in/siddhant-deshmukh-76540a192/" class="">
-                  <img class="w-7 h-7" src="assets/linkedin.svg">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Personal Projects -->
-
-          <div class="main-cards  flex flex-col  w-full rounded-md p-4  sm:p-8 overflow-hidden">
-            <h1 class="font-extrabold text-xl p-2 dark:text-white">Personal Projects</h1>
-
-            <!-- Twitter Clone  -->
-            <div class="project-info">
-              <header class="">
-                <div class="project-info-title-header">
-                  <img src="assets/twiiter.svg" class="">
-                  <div class="w-fit">
-                    <div class="font-medium text-lg">Twitter Clone</div>
-                    <div class="text-sm flex space-x-2 text-01">
-                      <a href="https://twitter-clone-flame-kappa.vercel.app/home" class="underline">Go to Website</a>
-                      <a href="https://github.com/siddhant-deshmukh/twitter-clone-using-nextjs"
-                        class="underline">Code</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-fit max-w-[90px] inline-block h-full xsm:max-w-full xsm:block">
-                  <span
-                    class="bg-blue-600 text-white dark:text-white project-info-keyword h-fit rounded dark:bg-blue-600">
-                    Azure
-                  </span>
-                  <span
-                    class="bg-blue-900 text-white dark:text-white project-info-keyword h-fit rounded dark:bg-blue-900">
-                    Next
-                  </span>
-                  <span
-                    class="bg-green-600 text-white project-info-keyword rounded h-fit dark:bg-green-600 dark:text-white">
-                    MongoDB
-                  </span>
-                </div>
-              </header>
-
-              <div class="project-info-points">
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Implemented key features including tweeting with text and media, liking ,retweeting, commenting,
-                    tweet feeds, etc.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Ensured the application is <b>responsive</b> and user-friendly, incorporating a <b>dark mode</b>
-                    for a better user experience.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    On Frontend uses NextJS, <b>tailwindcss</b> for styling, and SWR for <b>frontend Caching</b> and
-                    state management
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Integrated <i>Azure <b>Cosmos DB</b> for MongoDB</i> as the primary database, and <b>Azure Blob
-                      storage</b> to store user avatars and tweet media files.
-                    Also, Utilized other Azure services such as <b>Azure Functions</b> to make HTTP endpoints to
-                    upload images and <b>Azure AD</b> for authentication.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Demonstrated knowledge of key web development concepts, including database optimization, security,
-                    and cloud computing.
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <!-- GoogleFormClone -->
-            <div class="project-info border-y">
-
-              <header class="">
-                <div class="project-info-title-header">
-                  <img src="assets/google-form.svg">
-                  <div class="w-fit">
-                    <div class="font-medium text-lg">Goolge Form Clone</div>
-                    <div class="text-sm flex space-x-2 text-01"><a href="https://google-form-clone-sd.netlify.app/demo"
-                        class="underline">Go to Website</a><a
-                        href="https://github.com/siddhant-deshmukh/GoogleFormClone-frontend" class="underline">Code</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-fit max-w-[90px] inline-block h-full xsm:max-w-full xsm:block">
-                  <span class="bg-green-600 text-white dark:bg-green-600 dark:text-white project-info-keyword rounded">
-                    MERN
-                  </span>
-                </div>
-              </header>
-              <div class=" project-info-points" style="font-weight: 420;">
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>Developed a full-stack Google Form clone using the MERN stack</span>
-                </div>
-                <div class="flex"><span class="bullet-point"></span><span>
-                    Implemented key features, including creating forms with different question types (short answer,
-                    multiple-choice, etc.), response summery, csv responses.
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Also Incorporated Sortable js for <b>drag-and-drop functionality</b> to sort questions and
-                    options.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Utilized Express and MongoDB on the backend for efficient data management and storage.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Implemented secure user authentication with <b>JSONWebToken</b> and <b>Bcryptjs</b> for encrypting
-                    passwords, and provided additional authentication options with <b>OAuth</b> of Google and Github.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Demonstrated expertise in web application development, utilizing a variety of technologies and
-                    adhering to industry standards and best practices.
-                  </span>
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- Instagram -->
-            <div class="project-info">
-              <header class="">
-                <div class="project-info-title-header">
-                  <img src="assets/instagram.svg" />
-                  <div class="w-fit">
-                    <div class="font-medium text-lg">Instagram Clone</div>
-                    <div class="text-sm flex space-x-2 text-01">
-                      <a href="https://instagram-01-c1cb5.web.app/" class="underline">Go to Website</a>
-                      <a href="https://github.com/siddhant-deshmukh/firebase-insta" class="underline">Code</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-fit max-w-[50px] inline-block h-full xsm:max-w-full xsm:block">
-                  <span
-                    class=" text-white project-info-keyword rounded bg-blue-700 dark:bg-blue-700 dark:text-white">React</span>
-                  <span
-                    class="bg-yellow-600 text-white project-info-keyword rounded dark:bg-yellow-600 dark:text-white">Firebase</span>
-                </div>
-              </header>
-              <div class="project-info-points">
-                Built a responsive
-                Instagram clone website using React and Firebase.
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    On frontend React is used with <b>Tailwind CSS</b> for styling and <b>React Query</b> for
-                    Frontend Caching and state management.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    On Backend Firebase services are being used such as <b>Google Cloud Functions</b>, Firestore,
-                    Firebase
-                    Storage and Google Identity Platform.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Authentication
-                    methods include email-password with <b>Email Verification</b> and Google and GitHub OAuth.
-                  </span>
-                </div>
-                <div class="flex">
-                  <span class="bullet-point"></span>
-                  <span>
-                    Implemented optimized and secure database queries and leveraged other firebase features for
-                    database management, authentication, and hosting to create a scalable, efficient application.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- border-y border-y-gray-300  -->
-
-
-          </div>
-
         </div>
-      </main>
-      <script>
-        // const canvas = document.getElementById('canvas-dark')
-        // const starback = new Starback(canvas, {
-        //   type: 'dot',
-        //   quantity: 200,
-        //   direction: 315,
-        //   backgroundColor: ['#252449', '#373567'],
-        //   randomOpacity: true,
-        // })
-      </script>
-    </div>
+      </section>
+
+      <h3 class="">
+        <span>Projects</span>
+        <ul id="project-types-list" class="w-full text-lg pt-2 space-x-2">
+          <!-- <button name="all" class="project-filter-list ">All</button> -->
+          <button name="mern" class="project-filter-list ">MERN stack</button>
+          <button name="static" class="project-filter-list ">Static</button>
+          <button name="react" class="project-filter-list ">React</button>
+          <button name="others" class="project-filter-list ">Others</button>
+        </ul>
+      </h3>
+      <section id="projects-section" class="">
+        <!-- <h3 class="text-xl font-semibold mb-4">Projects</h3> -->
+        <div id="projects-list-container" class="my-2">
+          <ul id="projects-list" class="flex flex-col">
+            <!-- Twitter Clone -->
+            <div data-tag="react-others">
+              <h4>
+                <p>Twitter Clone:</p>
+                <a href="https://github.com/siddhant-deshmukh/twitter-clone-using-nextjs" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>Developed a full-stack NextJS based social media website that allows
+                  users to tweet with text and
+                  media, like, retweet, comment, and view tweet feeds..
+                </li>
+                <li>
+                  <mark></mark>Uses Azure services for database, storage, authentication, and cloud
+                  functions.
+                </li>
+              </ul>
+              <div>
+                <span>Next.js</span>
+                <span>React.js</span>
+                <span>TypeScript</span>
+                <span>Azure</span>
+              </div>
+            </div>
+            <!-- Form app -->
+            <div data-tag="others-react">
+              <h4>
+                <p>Form App:</p>
+                <a href="https://github.com/siddhant-deshmukh/form-app-golang-postgres" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>Built a full-stack web application that replicates Google Form
+                  functionality using the MERN stack.
+                </li>
+                <li>
+                  <mark></mark>Secured user authentication with JSONWebTokens and have OAuth
+                  options like Google, GitHub.
+                </li>
+              </ul>
+              <div>
+                <span>Golang</span>
+                <span>Gin</span>
+                <span>PostgreSQL</span>
+                <span>React.js</span>
+                <span>Redux</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+            <!-- Instagram Clone -->
+            <div data-tag="react-others">
+              <h4>
+                <p>Instagram Clone:</p>
+                <a href="https://github.com/siddhant-deshmukh/firebase-insta" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>Styled the UI with tailwindcss and managed frontend caching and
+                  state with React Query.
+                </li>
+                <li>
+                  <mark></mark>Optimized and secured database queries using Firestore
+                </li>
+              </ul>
+              <div>
+                <span>Firebase</span>
+                <span>React.js</span>
+                <span>React Query</span>
+                <span>TypeScript</span>
+                <span>Tailwindcss</span>
+              </div>
+            </div>
+            <!-- Google Form Clone -->
+            <div data-tag="mern">
+              <h4>
+                <p>Google Form Clone:</p>
+                <a href="https://github.com/siddhant-deshmukh/GoogleFormClone-frontend" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>Built a full-stack web application that replicates Google Form
+                  functionality using the MERN stack.
+                </li>
+                <li>
+                  <mark></mark>Secured user authentication with JSONWebTokens and have OAuth
+                  options like Google, GitHub.
+                </li>
+              </ul>
+              <div>
+                <span>MERN</span>
+                <span>Redux</span>
+                <span>TypeScript</span>
+                <span>MongoDB</span>
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>Node.js</span>
+              </div>
+            </div>
+            <!-- Crypto dashboard -->
+            <div data-tag="react">
+              <h4>
+                <p>Crypto dashboard:</p>
+                <a href="https://github.com/siddhant-deshmukh/crypto-rate-dashboard" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>Responsive, beautiful dashboard with dark mode.
+                </li>
+                <li>
+                  <mark></mark>Takes crypto data from the WazirX api and show in the dashboard.
+                </li>
+              </ul>
+              <div>
+                <span>React.js</span>
+                <span>TypeScript</span>                
+                <span>REST API</span>
+              </div>
+            </div>
+            <!-- Transport hub  -->
+            <div data-tag="mern">
+              <h4>
+                <p>Transport hub:</p>
+                <a href="https://github.com/siddhant-deshmukh/TranportHub" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>Through this app one can create an order and the suppliers will make a bid later the buyer can buy it.
+                </li>
+                <li>
+                  <mark></mark>Have chat functionality.
+                </li>
+              </ul>
+              <div>
+                <span>MERN</span>
+                <span>TypeScript</span>
+                <span>MongoDB</span>
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>Node.js</span>
+              </div>
+            </div>
+            <!-- YourHR -->
+            <div data-tag="mern-others">
+              <h4>
+                <p>YourHR:</p>
+                <a href="https://github.com/siddhant-deshmukh/YourHR" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>One can take users data, data-files and store and analyse them.
+                </li>
+                <li>
+                  <mark></mark>Using AWS s3 to store data files.
+                </li>
+              </ul>
+              <div>
+                <span>AWS S3</span>
+                <span>MERN</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+            <!-- Car simulation -->
+            <div data-tag="others">
+              <h4>
+                <p>Car Simulation:</p>
+                <a href="https://github.com/siddhant-deshmukh/car-simulation" target="_blank"><img src="./assets/github.svg" /></a>
+              </h4>
+              <ul class="points">
+                <li>
+                  <mark></mark>The main purpose of this project is to create an environment where we can control a car and simulate things like roads, obsticles the car will face and this will be later used to train car drive automatically.
+                </li>
+              </ul>
+              <div>
+                <span>Python</span>
+                <span>Python Arcade</span>
+                <span>Pymunk</span>
+                <span>Physics Engine</span>
+              </div>
+            </div>
+            <!-- static website -->
+            <div data-tag="static">
+              <h4>
+                <p>Static websites:</p>
+              </h4>
+              <article data-tag="static" class="flex flex-row w-full flex-wrap">
+                <img class="w-96 aspect-video mr-4 mb-4 rounded-lg border border-secondary-3" src="assets/siddhant-deshmukh-website.gif"  />
+                <img class="w-96 aspect-video mr-4 mb-4 rounded-lg border border-secondary-3" src="assets/PY-web-1.jpeg" />
+                <img class="w-96 aspect-video mr-4 mb-4 rounded-lg border border-secondary-3" src="assets/PY-web-2.jpeg" />
+              </article>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+
   </div>
-
-  <!-- 
-
-      |
-      |
-      |
-
-
-
-
-
-
-     -->
 </body>
 
 </html>
