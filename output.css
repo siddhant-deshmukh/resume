@@ -571,12 +571,12 @@ video {
   margin-left: auto;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-7 {
@@ -587,8 +587,20 @@ video {
   margin-top: auto;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .aspect-auto {
@@ -637,20 +649,28 @@ video {
   width: 24rem;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.min-w-\[315px\] {
+  min-width: 315px;
 }
 
 .max-w-4xl {
   max-width: 56rem;
 }
 
-.flex-row {
-  flex-direction: row;
+.max-w-\[386px\] {
+  max-width: 386px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -677,16 +697,24 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-16 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(4rem * var(--tw-space-x-reverse));
-  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -705,6 +733,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -769,10 +803,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -803,12 +833,25 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .pt-10 {
@@ -832,9 +875,14 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -947,6 +995,11 @@ nav button:hover {
         @apply px-2 ml-1 my-1 py-1 border border-purple-200  w-fit rounded-md bg-purple-100 text-sm font-medium text-purple-600 dark:border-cyan-200 dark:bg-purple-100 dark:text-purple-800
     } */
 
+#exp-list > div div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #exp-list h4 {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -990,15 +1043,14 @@ nav button:hover {
   color: rgb(0 248 248 / var(--tw-text-opacity));
 }
 
-#project-types-list button {
+#project-types-list div {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
   border-radius: 9999px;
   border-top-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(0 124 124 / var(--tw-border-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1px;
-  padding-bottom: 1px;
   font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1009,9 +1061,16 @@ nav button:hover {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-#project-types-list button:hover {
+#project-types-list div:hover {
   background-color: rgb(0 248 248 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.15;
+}
+
+#project-types-list button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 mark {
@@ -1071,6 +1130,8 @@ mark {
 #projects-list > div div {
   margin-top: 0.75rem;
   margin-left: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #projects-list h4 {
@@ -1104,10 +1165,17 @@ mark {
   margin-top: 1.25rem;
   padding-bottom: 0.5rem;
   padding-top: 1.25rem;
-  font-size: 22px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+  #work-part > h3 {
+    font-size: 22px;
+  }
 }
 
 .selected-project-type {
@@ -1142,9 +1210,19 @@ body {
 }
 
 #social-links > a {
-  width: 35px;
-  height: 35px;
-  margin-right: 7px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+/* xl */
+
+@media (min-width: 1280px){
+  #social-links > a {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+  }
 }
 
 .temp-hide {
@@ -1180,7 +1258,26 @@ body {
   transform: translateX(50%, 50%);
 }
 
-@media (min-width: 976px) {
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 940px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:aspect-\[1\.25\] {
     aspect-ratio: 1.25;
   }
@@ -1192,11 +1289,47 @@ body {
   .lg\:max-h-\[80vh\] {
     max-height: 80vh;
   }
+
+  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
+  .xl\:min-w-\[386px\] {
+    min-width: 386px;
+  }
+
+  .xl\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

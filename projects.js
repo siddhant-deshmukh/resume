@@ -1,4 +1,4 @@
-const projectTypeBtn = document.querySelectorAll("#project-types-list > button")
+const projectTypeBtn = document.querySelectorAll("#project-types-list  button")
 const projectsList = document.querySelector('#projects-list')
 
 // const projectsList = document.querySelectorAll("#projects-list")
@@ -120,7 +120,7 @@ updateProjects()
 // tempHiddenElementsScale.forEach((ele) => observerScale.observe(ele))
 
 
-const buttons = document.querySelectorAll("button.project-filter-list")
+const buttons = document.querySelectorAll("button.project-filter-btn")
 buttons.forEach((button) => {
   button.addEventListener("click", (event) => {
 
@@ -208,7 +208,7 @@ window.addEventListener("popstate", (event) => {
 
 function updateProjects() {
   const url = new URL(location);
-  const projectType = url.searchParams.get("project") || 'mern';
+  const projectType = url.searchParams.get("project") || 'all';
   // console.log(" :", projectType)
 
   console.log(projectTypeBtn, projectType)

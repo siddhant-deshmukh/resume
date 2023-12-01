@@ -17,11 +17,18 @@ body {
     margin-bottom: 8px;
 }
 #social-links > a {
-    width: 35px;
-    height: 35px;
-    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
-
+/* xl */
+@media (min-width: 1280px){
+    #social-links > a {
+        width: 35px;
+        height: 35px;
+        margin-right: 7px;
+    }
+}
 .temp-hide {
     display: none;
     opacity: 0;
@@ -61,6 +68,9 @@ body {
         @apply px-2 ml-1 my-1 py-1 border border-purple-200  w-fit rounded-md bg-purple-100 text-sm font-medium text-purple-600 dark:border-cyan-200 dark:bg-purple-100 dark:text-purple-800
     } */
 
+    #exp-list > div div {
+        @apply flex flex-wrap 
+    }
     #exp-list h4 {
         @apply text-lg font-medium text-primary-light-2 
     }
@@ -77,8 +87,11 @@ body {
     #exp-list span {
         @apply px-3 py-1.5 text-sm border rounded-full mr-3 mt-2 border-secondary-2  text-secondary
     }
+    #project-types-list div{
+        @apply mr-2 mb-2 text-[14px] rounded-full border-t shadow-sm overflow-hidden shadow-secondary-2 border-secondary-2 hover:bg-secondary hover:bg-opacity-[0.15]   text-primary
+    }
     #project-types-list button{
-        @apply px-4 py-[1px] text-[14px] rounded-full border-t shadow-sm shadow-secondary-2 border-secondary-2 hover:bg-secondary hover:bg-opacity-[0.15]   text-primary
+        @apply px-4 py-[1px] 
     }
 
     mark{
@@ -107,7 +120,7 @@ body {
         @apply flex-col
     }
     #projects-list > div div {
-        @apply mt-3 ml-3
+        @apply mt-3 ml-3 flex flex-wrap
     }
     #projects-list h4 {
         @apply text-xl font-medium text-primary-light-2 flex justify-between items-center
@@ -123,7 +136,7 @@ body {
         @apply pb-7 border-b border-b-secondary-2
     }
     #work-part > h3 {
-        @apply mt-5 text-[22px]  pb-2 font-semibold pt-5 text-primary
+        @apply mt-5 text-xl xl:text-[22px]  pb-2 font-semibold pt-5 text-primary
         /* sticky top-[92px] */
     }
 
